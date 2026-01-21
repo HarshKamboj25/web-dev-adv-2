@@ -107,7 +107,7 @@
 //     console.log("Form Submitted");
 // });
 
-
+console.log("Script loaded");
 
 
 
