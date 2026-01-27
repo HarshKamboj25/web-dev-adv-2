@@ -107,13 +107,48 @@
 //     console.log("Form Submitted");
 // });
 
-console.log("Script loaded");
+// console.log("Script loaded");
 
-window.addEventListener("load", ()=>{
-    console.log("All resources finished loading!");
-});
+// window.addEventListener("load", ()=>{
+//     console.log("All resources finished loading!");
+// });
+
+// console.log(a); 
+// // console.log(b); 
 
 
+// var a = 10;
+// let b = 20;
 
+// console.log(a); 
+// console.log(b); 
+
+// function test(){
+//     let c = 30;
+//     console.log(c);
+//     console.log("Inside Test Function");
+// }
+
+// test();
+
+// function greet (){
+
+//     var message = "Hello, user!";
+//     console.log(message);
+// }
+// greet();
+// console.log(message);
+
+
+// function first (){
+//     second ();
+// }
+// function second (){
+//     third ();
+// }
+// function third (){
+//     console.trace()
+// }
+// first ();
 
 
