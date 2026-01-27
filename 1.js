@@ -109,6 +109,10 @@
 
 console.log("Script loaded");
 
+window.addEventListener("load", ()=>{
+    console.log("All resources finished loading!");
+});
+
 
 
 
