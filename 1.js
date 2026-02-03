@@ -304,8 +304,10 @@ p.then((message)=>{
     console.log(message)
     }).catch((error)=>{
         console.log(error)
-    })
+    }).finally(()=>{
+        console.log("Promise is settled")
 console.log(p)
+    })
 
 
 
