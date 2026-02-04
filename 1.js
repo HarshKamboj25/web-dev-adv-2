@@ -289,25 +289,82 @@
 // });
 
 
-const p=new Promise((resolve,reject)=>{
-    let done=true
-    setTimeout(() => {
-    if(done){
-        resolve("Promise Resolved")
-    }else{
-        reject("Promise Rejected")
-    }
-},5000)
-})
+// const p=new Promise((resolve,reject)=>{
+//     let done=true
+//     setTimeout(() => {
+//     if(done){
+//         resolve("Promise Resolved")
+//     }else{
+//         reject("Promise Rejected")
+//     }
+// },5000)
+// })
 
-p.then((message)=>{
-    console.log(message)
-    }).catch((error)=>{
-        console.log(error)
-    }).finally(()=>{
-        console.log("Promise is settled")
-console.log(p)
-    })
+// p.then((message)=>{
+//     console.log(message)
+//     }).catch((error)=>{
+//         console.log(error)
+//     }).finally(()=>{
+//         console.log("Promise is settled")
+// console.log(p)
+//     })
 
 
+// function dohomework(){
+//     const p=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true
+//             if(done){
+//                 console.log("did Homework")
+//                 resolve("Homework Done")
+//             }else{
+//                 reject("Homework Not Done")
+//             }
 
+//         }, 2000);
+//     })
+//     return p
+
+// }
+// function eatDinner(){
+//     const p=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true
+//             if(done){
+//                 console.log("ate Dinner")
+//                 resolve("Dinner Done")
+//             }else{
+//                 reject("Dinner Not Done")
+//             }
+//         }, 2000);
+//     })
+//     return p
+// }
+// function goToPlayground(){
+//     const p= new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true
+//             if(done){
+//                 console.log("went to Playground")
+//                 resolve(" Playground time")
+//             }else{
+//                 reject("not allowed")
+//             }
+//         }, 2000)
+//     })
+//     return  p
+// }
+// dohomework()
+// .then((message)=>{
+//     console.log(message)
+//     return eatDinner()
+// }).then((message)=>{
+//     console.log(message)
+//     return goToPlayground()
+// }).then((message)=>{
+//     console.log(message)
+// }).catch((error)=>{
+//     console.log(error)
+// }).finally(()=>{
+//     console.log("All tasks are done")
+// })
