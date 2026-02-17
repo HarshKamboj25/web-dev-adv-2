@@ -368,3 +368,85 @@
 // }).finally(()=>{
 //     console.log("All tasks are done")
 // })
+
+
+// function orderfood(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food ordered")
+//             resolve('food has been ordered')
+//         }, 2000);
+//     })
+// }
+
+// function preparefood(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food prepared")
+//             resolve()
+//         }, 2000);
+//     })
+// }
+
+// function orderdelivered(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food delivered")
+//             resolve()
+//         }, 2000);
+//     })
+// }
+
+// async function order(){
+    
+//     const data = await orderfood()
+//     console.log(data)
+//     await preparefood()
+//     await orderdelivered()
+// }
+
+// order()
+
+
+// orderfood().then((data))=>{
+// return preparefood()
+// }).then(()=>{
+// return orderdelivered()
+// }).then((data)=>{
+// }).catch((error)=>{
+// })
+
+// console.log('first line')
+// try{
+//     // let a=10
+//     // let a=20
+//     // console.log(a)
+//     //     console.log("line after  sample error") 
+//     let age =16
+//     if(age<18)
+//         throw new Error("Age must be greater than 16")
+
+// }catch(e){
+//     console.warn(e)
+// }
+// console.log("last line")
+
+// how to fetch data from api using fetch and async await
+
+async function getdata(){
+
+const response = await fetch("https://dummyjson.com/products")
+const data = await response.json()
+// console.log(data.products[0].title)
+data.products.forEach((product)=>{
+    console.log(product.title)
+})
+
+}
+
+getdata()
+
+
+
+
+
