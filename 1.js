@@ -435,14 +435,26 @@
 
 async function getdata(){
 
-const response = await fetch("https://dummyjson.com/products")
+    try{
+const response = await fetch("https://dummyjson.com/products/200")
+if (response.ok=== false){
+throw new Error("something went wrong")
+}
 const data = await response.json()
+console.log(data)
 // console.log(data.products[0].title)
 data.products.forEach((product)=>{
     console.log(product.title)
 })
 
+}catch(error){
+    console.log(error)
+}finally{
+    console.log("API call completed")
+
 }
+}
+
 
 getdata()
 
