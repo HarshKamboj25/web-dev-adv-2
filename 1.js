@@ -433,32 +433,108 @@
 
 // how to fetch data from api using fetch and async await
 
-async function getdata(){
+// async function getdata(){
 
-    try{
-const response = await fetch("https://dummyjson.com/products/200")
-if (response.ok=== false){
-throw new Error("something went wrong")
+//     try{
+// const response = await fetch("https://dummyjson.com/products/200")
+// if (response.ok=== false){
+// throw new Error("something went wrong")
+// }
+// const data = await response.json()
+// console.log(data)
+// // console.log(data.products[0].title)
+// data.products.forEach((product)=>{
+//     console.log(product.title)
+// })
+
+// }catch(error){
+//     console.log(error)
+// }finally{
+//     console.log("API call completed")
+
+// }
+// }
+
+
+// getdata()
+
+// async function sendData() {
+//     const response = await fetch("https://dummyjson.com/products", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"  },
+//         body: JSON.stringify({
+//             title: "new product ",
+//             price: 549,
+//             description: "this is some new product ", 
+//             discountedPercentage: 10,
+//             rating: 4.5,
+//             stock: 100,
+//             brand : "abc ",
+//             category: "elecronics ",
+            
+//         })
+//     })
+//     const data = await response.json();
+//     console.log(data);
+// }
+// localStorage.setItem ("Name ", "Alex ")
+// localStorage.setItem("Age ", 23);
+
+// console.log(localStorage.getItem("Name "));
+// console.log(localStorage.getItem("Age "));
+
+// localStorage.removeItem("Name ");
+// console.log(localStorage.getItem("Name "));
+ 
+// localStorage.setItem("Name ", "John");
+
+
+
+
+// document.cookie="name=Alex; expires=wed, 25 feb 2026 23:59:50 UTC "
+// document.cookie="age=45; expires=wed, 25 feb 2065 23:59:59 UTC "
+
+// console.log(document.cookie)
+
+
+// function* generate(){
+
+//     // yield 1
+//     // yield 2
+//     // yield 3
+//     let index=2501730059
+//     while(true){
+//         yield index
+//         index++
+//     }
+
+
+// }
+// const gen = generate()
+// console.log(gen)
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+
+// #important
+
+
+function add(x){
+    return function(y){
+        return function(z){
+            return x+y+z
+        }
+    }
 }
-const data = await response.json()
-console.log(data)
-// console.log(data.products[0].title)
-data.products.forEach((product)=>{
-    console.log(product.title)
-})
 
-}catch(error){
-    console.log(error)
-}finally{
-    console.log("API call completed")
+const first = add(1)
+console.log(first)
+const second = first(2)
+console.log(second)
+console.log(second(3))
 
-}
-}
+console.log(add(1)(2)(3))
 
-
-getdata()
-
-
-
-
-
+// console.log(add(1,2))
