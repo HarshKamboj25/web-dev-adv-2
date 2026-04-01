@@ -1,40 +1,33 @@
-// console.log("Hello, World!");
 // console.log(document)
+// const para = document.querySelector('p')
+// para.innerText = "this is updated end"
 
-// const para = document.querySelector("p")
+// const para=document.getElememtByClassName("para")
+// para[0].innerText="This is updated paragraph text"
+// para[1].style.color="red"
+// console.log(para)
 
-// para.innerText="THIS IS UPDATED PARAGRAPH TEXT"
-// console.log(para.innerText);
-
-// const para = document.getElementsByClassName("para") //return html collection
-// para[0].innerText="THIS IS UPDATED PARAGRAPH TEXT"
+// const para=document.querySelectorAll(".para")
+// para[0].innerText="This is updated paragraph text"
 // para[1].style.color="red"
 // console.log(para);
 
-// const para = document.querySelectorAll(".para") //return node list 
-//  para[0].innerText="THIS IS UPDATED PARAGRAPH TEXT"
-//  para[1].style.color="red"
-//  console.log(para);
+// let arr= [1,2,3,4,5]
+// const newarr= arr.forEach((ele)=>console.log(ele))
 
-//  let arr= [1,2,3,4,5]
-//  const newArr= arr.forEach((ele)=>console.log(ele))
-
-// const container = document.querySelector(".container") 
-// container.innerHTML= "<h1>This is a heading</h1><p>This is a paragraph inside container div</p>"
+// const container=document.querySelector(".container")
+// container.innerHTML="<h1>This is a heading<h1>"
 // console.log(container)
 
-// const btn = document.querySelector("button");
+// const btn=document.querySelector("button");
 // btn.classList.add("btn")
-// btn.classList.remove("btn")
-// btn.classList.toggle("btn")
 
-// function printMessage(){
-//     console.log("Button Clicked");
+
+// function print(){
+//     console.log("Button clicked");
 // }
-
-// btn.addEventListener("click", printMessage)
-// btn.removeEventListener("click", printMessage)
-// btn.addEventListener("click", ()=>console.log("Anonymous Function Called"))
+// btn.addEventListener('click',print)
+// btn.removeEventListener('click',print)
 
 
 // function  startTimer(){
@@ -53,126 +46,135 @@
 // stopBtn.addEventListener("click", stopTimer);
 
 
-// function message(){
-//     console.log("Button Clicked");
-// }
 
-// const click = document.querySelector(".click");
-// click.addEventListener("click", message);
 
-// const stop = document.querySelector(".stop");
-// stop.addEventListener("click", ()=>{
-//     console.log("Button Stopped");
-//     click.removeEventListener("click", message);
-// });
+// const click=document.querySelector(".click")
+// const stop=document.querySelector(".stop")
 
 // function message(){
-//     console.log("Button Clicked");
+//     console.log("Button Clicked")
+    
 // }
 
-// const click = document.querySelector(".click");
-// click.addEventListener("click", message);
-// click.addEventListener("mouseover", ()=>{
-//     console.log("Hovering over Click button");
-// });
-
-
-// const stop = document.querySelector(".stop");
-// stop.addEventListener("click", ()=>{
-//     console.log("Button Stopped");
-//     click.removeEventListener("click", message);
-// });
-// stop.addEventListener("mouseover", ()=>{
-//     console.log("Hovering over Stop button");
-// });
+// click.addEventListener('click',message)
+// stop.addEventListener('click',()=>{
+//     console.log("stop button clicked!!")
+//     click.removeEventListener('click',message)
+// })
 
 
 
-// const click = document.querySelector(".click");
+// const click=document.querySelector(".click")
 
 // function message(event){
-
-//     console.log(event.key);
-//     console.log("Button Clicked");
-
+//     console.log(event.key)
+//     console.log("Button Clicked")
 // }
 
-// click.addEventListener("keyup", message);
+// click.addEventListener('keyup',message)
+
+// const form=document.querySelector("form")
+// form.addEventListener('submit',(event)=>{
+//     event.preventDefault()
+//     console.log("Form Submitted")
+// })
+
+// const div=document.querySelector(".container")
+// const div2=document.querySelector(".outer")
+// const btn=document.querySelector(".button")
+
+// div.addEventListener('click',()=>{ console.log("clicked the div")},false)
+// div.addEventListener('click',()=>{ console.log("clicked the outer div")},false)
+// div.addEventListener('click',()=>{ console.log("clicked the button")},false)
+
+// js execution context
 
 
+// console.log(a);
+// console.log(b);
 
-// const form = document.querySelector("form");
-// form.addEventListener("submit", (event)=>{
-//     event.preventDefault();
-//     console.log("Form Submitted");
-// });
+// var a = 678;
+// let b = 567;
 
-// console.log("Script loaded");
+// console.log(a);
+// console.log(b);
 
-// window.addEventListener("load", ()=>{
-//     console.log("All resources finished loading!");
-// });
-
-// console.log(a); 
-// // console.log(b); 
-
-
-// var a = 10;
-// let b = 20;
-
-// console.log(a); 
-// console.log(b); 
-
-// function test(){
-//     let c = 30;
-//     console.log(c);
-//     console.log("Inside Test Function");
+// function print(){
+//     let c=63
+//     console.log(c)
+//     console.log("inside fn")
 // }
 
-// test();
+// print()
 
-// function greet (){
 
-//     var message = "Hello, user!";
-//     console.log(message);
+// function greet(){
+//     var message="hello"
+//     console.log(message)
 // }
-// greet();
-// console.log(message);
 
+// greet()
+// console.log(message)
 
-// function first (){
-//     second ();
+// debugger;
+
+// function first(){
+//     second()
 // }
-// function second (){
-//     third ();
+
+// function second(){
+//     third()
 // }
-// function third (){
+
+// function third(){
 //     console.trace()
 // }
-// first ();
+
+// first()
+
+// function infinite(){
+//     Infinity()
+// }
+
+// infinite()
+
+// console.log(a)
+// let a = 10
+
+// console.log("first line")
+// setTimeout(()=>{console.log("line after 2 sec")},2000)
+// console.log("second line")
+// console.log("second line")
+// console.log("second line")
+// console.log("second line")
+// console.log("second line")
+// console.log("second line")
+// console.log("second line")
 
 
-// console.log("first line");
-// setTimeout(()=>{console.log("second line")},2000);
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
-// console.log("second line");
 
-
+// setTimeout(() => {
+//     alert("after 3 sec")
+// },3*1000);
 
 // const timerId=setInterval(() => {
-//     console.log("after 3 seconds")
-// }, 1000);
-// console.log(timerId);
+//     console.log(" after 3 sec")
+// },1000);
+// console.log(timerId)
+// clearInterval()
 // setTimeout(() => {
 //     clearInterval(timerId)
-    
-// },10*1000)
+// },10*1000);
+
+// let count=0;
+// const timerid=setInterval(() => {
+//     count++;
+//     console.log("1 second passed",count);
+//     if(count===10){
+//         clearInterval(timerid);
+//         console.log("interval cleared");
+//     }
+// }, 1000);
 
 // var hello=1
 // const timerId=setInterval(()=>{
@@ -183,7 +185,8 @@
 // console.log(timerId)
 // setTimeout(()=>{
 //     clearInterval(timerId)
-// },10*1000)       
+// },10*1000)
+
 
 // let count=1
 
@@ -191,30 +194,32 @@
 //     if(count===10)clearInterval(timerId)
 //     console.log(count)
 //     count+=1
-
 // },1000)
 
-// console.log("before timeout")
-// setTimeout(()=>{
-//     console.log("inside timeout")
-// },0)
-// console.log("after timeout")
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
+
+// btn.addEventListener('click',()=>{
+//     const li=document.createElement('li')
+//     li.innerText=name.value
+// list.appendChild(li)
+// name.value=""
+// })
+
 
 // const name=document.querySelector("#name")
 // const btn=document.querySelector(".btn")
 // const list=document.querySelector(".list")
 
 // btn.addEventListener("click",()=>{
-
-//     if(name.value==="")return
+//     if(name.value==="")return;
 //     const li=document.createElement("li")
 //     const dlt=document.createElement("button")
 
 
 //     dlt.innerText="Delete"
 //     li.innerText=name.value;
-
-
 //     dlt.addEventListener("click",()=>{
 //         list.removeChild(li)
 //     })
@@ -227,23 +232,28 @@
 //     name.value=""
 // })
 
-
-
-
-// function greet(xyz){ //Call back function
-//     setTimeout(() => {
-
-//     console.log("Hello User")
-//     xyz(30)
-// }, 2000);
-    
-
+// function greet(){
+//     console.log("Hello World")
 // }
 
-// function print(num){ //Higher order function
-//     console.log("total students are ",num);
+// function print(sample, num){
+//     sample()
+//     console.log("total students are", num)
+// }
+// greet()
+// print(greet, 45)
+
+
+// function greet(xyz){
+//     setTimeout(()=>{
+//     console.log("Hello World")
+// },2000)
+// xyz(45)
 // }
 
+// function print(num){
+//     console.log("total students are", num)
+// }
 // greet(print)
 
 
@@ -262,6 +272,18 @@
 //         }, 1000);             
 //     }, 1500);
 // }, 2000);
+
+
+
+
+// function finishhomework(callback){
+//     console.log("starting homework....");
+//     setTimeout(() => {
+//         console.log("Homework done!");
+//         callback();
+//     }, 2000);
+// }
+
 
 
 // function finishHomework(callback){
@@ -289,174 +311,264 @@
 // });
 
 
-// const p=new Promise((resolve,reject)=>{
+
+
+
+// const p=new Promise((res, rej)=>{
 //     let done=true
-//     setTimeout(() => {
-//     if(done){
-//         resolve("Promise Resolved")
-//     }else{
-//         reject("Promise Rejected")
-//     }
-// },5000)
+//     setTimeout(()=>{
+//         if(done){
+//             res("work is done!!")
+//         }else{
+//             rej("work is not done")
+//         }
+//     }, 5000);
+// })
+// // console.log(p)
+// p.then((msg)=>{
+//     console.log(msg)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("finally blocked")
 // })
 
-// p.then((message)=>{
-//     console.log(message)
-//     }).catch((error)=>{
-//         console.log(error)
-//     }).finally(()=>{
-//         console.log("Promise is settled")
-// console.log(p)
-//     })
+
+// event loop
 
 
-// function dohomework(){
-//     const p=new Promise((resolve,reject)=>{
-//         setTimeout(() => {
-//             let done=true
-//             if(done){
-//                 console.log("did Homework")
-//                 resolve("Homework Done")
-//             }else{
-//                 reject("Homework Not Done")
-//             }
-
-//         }, 2000);
-//     })
-//     return p
-
-// }
-// function eatDinner(){
-//     const p=new Promise((resolve,reject)=>{
-//         setTimeout(() => {
-//             let done=true
-//             if(done){
-//                 console.log("ate Dinner")
-//                 resolve("Dinner Done")
-//             }else{
-//                 reject("Dinner Not Done")
-//             }
-//         }, 2000);
-//     })
-//     return p
-// }
-// function goToPlayground(){
-//     const p= new Promise((resolve,reject)=>{
-//         setTimeout(() => {
-//             let done=true
-//             if(done){
-//                 console.log("went to Playground")
-//                 resolve(" Playground time")
-//             }else{
-//                 reject("not allowed")
-//             }
+// function orderFood(){
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
+//             console.log("food ordered")
+//             res("food is ready")
 //         }, 2000)
 //     })
-//     return  p
-// }
-// dohomework()
-// .then((message)=>{
-//     console.log(message)
-//     return eatDinner()
-// }).then((message)=>{
-//     console.log(message)
-//     return goToPlayground()
-// }).then((message)=>{
-//     console.log(message)
-// }).catch((error)=>{
-//     console.log(error)
-// }).finally(()=>{
-//     console.log("All tasks are done")
-// })
-
-
-// function orderfood(){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(() => {
-//             console.log("food ordered")
-//             resolve('food has been ordered')
-//         }, 2000);
-//     })
 // }
 
-// function preparefood(){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(() => {
+// function prepareFood(){
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
 //             console.log("food prepared")
-//             resolve()
-//         }, 2000);
+//             res()
+//         }, 2000)
 //     })
 // }
 
-// function orderdelivered(){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(() => {
+
+// function orderDeliver(){
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
 //             console.log("food delivered")
-//             resolve()
-//         }, 2000);
+//             res()
+//         }, 2000)
 //     })
 // }
+
 
 // async function order(){
+//     await orderFood()
+//     await prepareFood()
+//     await orderDeliver()
     
-//     const data = await orderfood()
-//     console.log(data)
-//     await preparefood()
-//     await orderdelivered()
 // }
 
 // order()
 
+// async function order(){
+//     const data=await orderFood()
+//     console.log(data)
+//     await prepareFood()
+//     await orderDeliver()
+    
+// }
 
-// orderfood().then((data))=>{
-// return preparefood()
-// }).then(()=>{
-// return orderdelivered()
+// order()
+
+// orderFood().then((data)=>{
+//     return prepareFood()
 // }).then((data)=>{
-// }).catch((error)=>{
+//     return orderDeliver()
+// }).then((data)=>{
+
+// }).catch((err)=>{
+//     console.log("something went wrong")
 // })
 
-// console.log('first line')
+// console.log("first line")
 // try{
-//     // let a=10
-//     // let a=20
-//     // console.log(a)
-//     //     console.log("line after  sample error") 
-//     let age =16
-//     if(age<18)
-//         throw new Error("Age must be greater than 16")
+//     console.log(sample)
+//     console.log("line after sample")
+// }catch(e){
+//     console.log(e)
+// }
+// console.log("last line")
 
+
+// console.log("first line")
+// console.log(sample)
+// console.log("last line")
+
+
+
+
+// console.log("first line")
+// try{
+    // console.log(sample)
+    // console.log("line after sample")
+//     let age=16
+//     if (age<18){
+//         throw new Error("age must be greater than 18")
+//     }
 // }catch(e){
 //     console.warn(e)
 // }
 // console.log("last line")
 
-// how to fetch data from api using fetch and async await
+
+
+// async function getData(){
+//     const response=await fetch("https://dummyjson.com/products")
+//     const data=await response.json()
+//     // console.log(data.products[0].title)
+//     data.product.forEach((product)=>{
+//         console.log(product.title)
+//     })
+// }
+// getData()
+
 
 // async function getdata(){
 
-//     try{
-// const response = await fetch("https://dummyjson.com/products/200")
-// if (response.ok=== false){
-// throw new Error("something went wrong")
-// }
+// const response = await fetch("https://dummyjson.com/products")
 // const data = await response.json()
-// console.log(data)
 // // console.log(data.products[0].title)
 // data.products.forEach((product)=>{
 //     console.log(product.title)
 // })
 
-// }catch(error){
-//     console.log(error)
-// }finally{
-//     console.log("API call completed")
-
 // }
-// }
-
 
 // getdata()
+
+
+// async function getdata(){
+//     try{
+//         const response = await fetch("https://dummyjson.com/products")
+//         if(response.ok===false){
+//             throw new Error("something went wrong")
+//         }
+//         const data = await response.json()
+//         console.log(data)
+//         // console.log(data.products[0].title)
+//         data.products.forEach((product)=>{
+//             console.log(product.title)
+//         })
+//     }catch(e){
+//         console.log(e)
+//     }finally{
+//         console.log("finally block")
+//     }
+// }
+
+// getdata()
+
+
+
+
+// async function getdata(){
+//     try{
+//         const response = await fetch("https://dummyjson.com/products", {
+//             method:"GET",
+//         }
+//         )
+//         if(response.ok===false){
+//             throw new Error("something went wrong")
+//         }
+//         const data = await response.json()
+//         console.log(data)
+//         // console.log(data.products[0].title)
+//         data.products.forEach((product)=>{
+//             console.log(product.title)
+//         })
+//     }catch(e){
+//         console.log(e)
+//     }finally{
+//         console.log("finally block")
+//     }
+// }
+
+// getdata()
+
+
+
+
+
+
+
+
+
+// async function sendData(){
+//     const response=await fetch('https://dummyjson.com/products',{
+//         method:"POST",
+//         headers:{
+//             "Content-Type":"application/json"
+//     },
+//         body:JSON.stringify({
+//             title:"test product",
+//             description:"this is a new product",
+//             price:100,
+//             discountPercentage:10,
+//             rating:4.5,
+//             stock:50,
+//             brand:"ABC",
+//             category:"Electronics",
+//         })
+//     })
+//     const data=await response.json()
+//     console.log(data)
+// }
+// sendData();
+
+
+
+
+
+// localStorage.setItem("name","Alex")
+// localStorage.setItem("age",45)
+
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))    
+
+// localStorage.removeItem("name")
+// console.log(localStorage.getItem("name"))
+
+
+// sessionStorage.setItem("name","Alex")
+// sessionlStorage.setItem("age",45)
+
+// console.log(sessionStorage.getItem("name"))
+// console.log(sessionStorage.getItem("age"))    
+
+// sessionStorage.removeItem("name")
+// console.log(sessionStorage.getItem("name"))
+
+
+
+
+
+// localStorage.setItem("name","Alex")
+// localStorage.setItem("age",45)
+
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))  
+
+// localStorage.setItem("name","John")
+
+
+
+
+
 
 // async function sendData() {
 //     const response = await fetch("https://dummyjson.com/products", {
@@ -492,27 +604,34 @@
 
 
 
-// document.cookie="name=Alex; expires=wed, 25 feb 2026 23:59:50 UTC "
-// document.cookie="age=45; expires=wed, 25 feb 2065 23:59:59 UTC "
+
+
+
+
+
+
+
+
+// document.cookie="name=Alex; expires=Fri, 23 Dec 2026 23:59:59 GMT"
+// document.cookie="age=45; expires=Fri, 25 Dec 2026 23:59:59 GMT"
 
 // console.log(document.cookie)
 
 
-// function* generate(){
 
-//     // yield 1
-//     // yield 2
-//     // yield 3
-//     let index=2501730059
+// function* generator(){
+    // yield 1;
+    // yield 2;
+    // yield 3;
+//     let index=225017343
 //     while(true){
-//         yield index
+//         yield index;
 //         index++
 //     }
-
-
 // }
-// const gen = generate()
+// const gen=generator()
 // console.log(gen)
+// console.log(gen.next())
 // console.log(gen.next())
 // console.log(gen.next())
 // console.log(gen.next())
@@ -521,20 +640,20 @@
 // #important
 
 
-function add(x){
-    return function(y){
-        return function(z){
-            return x+y+z
-        }
-    }
-}
+// function add(x){
+//     return function(y){
+//         return function(z){
+//             return x+y+z
+//         }
+//     }
+// }
 
-const first = add(1)
-console.log(first)
-const second = first(2)
-console.log(second)
-console.log(second(3))
+// const first = add(1)
+// console.log(first)
+// const second = first(2)
+// console.log(second)
+// console.log(second(3))
 
-console.log(add(1)(2)(3))
+// console.log(add(1)(2)(3))
 
 // console.log(add(1,2))
