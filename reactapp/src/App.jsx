@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import './App.css'
-import Article from './components/Article'
-import Menu from './components/menu'
-function App() {
+import Menu from './component/Menu'
+import Article from './component/Article'
+import Homepage from './component/Homepage'
 
+function App() {
+  const[data,setData]=useState("Sample data")
   return (
     <>
+      <Homepage/>
       <Menu/>
-      <Article/>
+      <Article data={data}/>
     </>
   )
 }
