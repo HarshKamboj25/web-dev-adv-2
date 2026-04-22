@@ -92,5 +92,3 @@ const Button=styled.button`
     width: 100px;
 `
 
-
-///////
