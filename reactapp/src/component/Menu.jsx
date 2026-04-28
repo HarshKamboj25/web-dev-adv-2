@@ -1,19 +1,44 @@
 import React ,{Component}from 'react'
 import { add as addition } from './utility'
 import style from "../css/Menu.module.css"
+import { Link, NavLink , useNavigate } from 'react-router-dom'
 // import ArtStyle from "../css/Article.module.css"
 
 function Menu() {
+  const navigate=useNavigate()
     console.log(addition(3,4))
+
+    const handlelogin=()=>{
+      navigate("/article")
+    }
   return (
     <div>
       <h1>Menu</h1>
-      <ul>
-        <li>Sports</li>
-        <li>Entertainment</li>
-        <li>Polititcs</li>
+    <ul>
+  <li>Sports</li>
+  <li>Entertainment</li>
+  <li>Politics</li>
 
-      </ul>
+ <Link className="bg-cyan-700 text-white mx-2 px-3 py-1 rounded" to="/article">
+  <button>Article</button>
+</Link>
+
+<NavLink
+  style={({ isActive }) => ({
+    backgroundColor: isActive ? "teal" : ""
+  })}
+  className="bg-cyan-700 text-white mx-2 px-3 py-1 rounded"
+  to="/">
+
+  <button>Homepage</button>
+</NavLink>
+
+<Link className="bg-cyan-700 text-white mx-2 px-3 py-1 rounded" to="/contact">
+  <button>Contact</button>
+</Link>
+
+<button onClick={handlelogin}>Login</button>
+</ul>
     </div>
   )
 }
