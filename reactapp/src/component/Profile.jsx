@@ -1,13 +1,14 @@
-import react from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 
-function profile() {
+function Profile() {
 
     const {username}=useParams()
-return (
+  return (
     <div>
-        <h1>{username}</h1>
+      <h1>{username}</h1>
     </div>
-)
+  )
 }
-export default profile     
+
+export default Profile
